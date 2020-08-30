@@ -1,0 +1,45 @@
+.mainP {
+    grid-area: main;
+    background-color: #34547a;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+.mainP h1 {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 11px;
+    border-bottom: 1px solid white;
+    font-weight: 500;
+}
+
+.mainP .mainInfo {
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+
+.mainP img {
+    width: 200px;
+    height: 155px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+@media screen and (max-width: 855px) {
+    .mainP {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainP .mainInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    .mainP h1 {
+        text-align: center;
+    }
+}
