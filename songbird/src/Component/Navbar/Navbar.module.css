@@ -1,0 +1,39 @@
+.nav {
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.nav li {
+    flex-grow: 1;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00bc8c;
+    font-size: 21px;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nav a {
+    cursor: text;
+    color: white;
+    text-decoration: none;
+}
+.nav .iconDefault {
+    background-color: #34547a;
+}
+
+.nav .iconCurrent {
+    background-color: #32b2fb;
+}
