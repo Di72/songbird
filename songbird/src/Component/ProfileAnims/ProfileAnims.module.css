@@ -1,0 +1,78 @@
+.prof {
+    grid-area: prof;
+    background-color: #34547a;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.defaultProf {
+    padding: 15px;
+    font-size: 1.1em;
+}
+.animInfo {
+    display: flex;
+    flex-direction: row;
+    min-height: 133px;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+.animInfo img {
+    width: 200px;
+    height: 155px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.animName {
+    color: white;
+    font-size: 1.40625rem;
+    padding-bottom: 6px;
+    border-bottom: 1px solid white;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.animSpecies {
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    padding-bottom: 6 px;
+    border-bottom: 1px solid white;
+}
+.animInfoText {
+    width: 100%;
+    display: flex;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    flex-direction: column;
+    margin-left: 1em;
+}
+.animBio {
+    padding: 1rem;
+    font-size: 1rem;
+}
+@media screen and (max-width: 1222px) {
+    .prof {
+        margin-left: 0;
+    }
+
+    .animInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .animInfoText {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        margin-left: 0;
+    }
+    .animName {
+        text-align: center;
+    }
+    .animSpecies {
+        text-align: center;
+    }
+}
