@@ -1,0 +1,108 @@
+$rhap_theme-color: #868686 !default;
+$rhap_background-color: #00bc8c !default;
+$rhap_bar-color: #00bc8c !default;
+$rhap_time-color: #333 !default;
+$rhap_font-family: inherit !default;
+
+.rhap_container {
+  box-sizing: border-box;
+  display: flex;
+  line-height: 1;
+  font-family: $rhap_font-family;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #34547a;
+  box-shadow: 0 0 0px #34547a;
+  &:focus:not(:focus-visible) {
+    outline: 0;
+  }
+  &:active:not(:focus-visible) {
+    outline: 0;
+  }
+
+  svg {
+    vertical-align: initial;
+  }
+}
+.rhap_container,
+.rhap_container:active,
+.rhap_container:focus {
+  outline: none;
+}
+.rhap_volume-bar-area,
+.rhap_volume-bar-area:active,
+.rhap_volume-bar-area:focus {
+  outline: none;
+}
+.rhap_progress-container,
+.rhap_progress-container:active,
+.rhap_progress-container:focus {
+  outline: none;
+}
+.rhap_progress-filled {
+  background-color: #32b2fb;
+}
+.rhap_main-controls-button {
+  margin: 0 3px;
+  color: white;
+  font-size: 35px;
+  width: 35px;
+  height: 35px;
+}
+.rhap_repeat-button {
+  display: none;
+}
+.rhap_volume-button {
+  flex: 0 0 26px;
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: white;
+  margin-right: 6px;
+}
+.rhap_volume-indicator {
+  background: white;
+}
+.rhap_volume-controls {
+  flex: none;
+  width: 100px;
+  margin-bottom: 9px;
+}
+.rhap_progress-indicator {
+  background: white;
+}
+
+.rhap_time {
+  color: white;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.rhap_controls-section {
+  display: flex;
+  flex: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  margin-right: 40px;
+}
+
+.rhap_main-controls {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 9px;
+}
+.rhap_main {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 459px) {
+  .rhap_main {
+    flex-direction: column;
+  }
+  .rhap_controls-section {
+    margin-right: 60%;
+  }
+}

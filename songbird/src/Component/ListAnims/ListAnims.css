@@ -1,0 +1,88 @@
+.buttonRoundLose {
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	margin: 5px;
+	margin-left: 12px;
+	margin-right: 12px;
+	background: #d62c1a;
+}
+.buttonRoundWin {
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	margin: 5px;
+	margin-left: 12px;
+	margin-right: 12px;
+	background: #01d1ae;
+}
+.buttonRound {
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	margin: 5px;
+	margin-left: 12px;
+	margin-right: 12px;
+	background: #808080;
+}
+.buttonDefault {
+	background: #34547a;
+	color: white;
+	height: 50px;
+	cursor: pointer;
+	border: 1px solid #32b2fb;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding-top: 13px;
+	-webkit-border-radius: 0 0 0 0;
+	border-radius: 0 0 0 0;
+}
+.buttonBottom {
+	background: #34547a;
+	color: white;
+	height: 50px;
+	cursor: pointer;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	border: 1px solid #32b2fb;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding-top: 13px;
+}
+.buttonTop {
+	background: #34547a;
+	color: white;
+	height: 50px;
+	width: 100%;
+	cursor: pointer;
+	border: 1px solid #32b2fb;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding-top: 13px;
+}
+.buttonTop:hover,
+.buttonBottom:hover,
+.buttonDefault:hover {
+	background-color: #1f52a3;
+}
+button,
+button:active,
+button:focus {
+	outline: none;
+}
